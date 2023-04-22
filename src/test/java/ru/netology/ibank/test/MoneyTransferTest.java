@@ -151,15 +151,6 @@ public class MoneyTransferTest {
         $("[data-test-id=amount] input").setValue("10001");
         $("[data-test-id=from] input").setValue("5559000000000002");
         $("[data-test-id=action-transfer]").click();
-        $("[data-test-id=dashboard]").shouldBe(visible);
-        $x("//*[@id=\"root\"]/div/ul/li[1]").shouldHave(text("20000"));
-        $x("//div/ul/li[2]/div/button").click();
-        $("[data-test-id=amount] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("[data-test-id=amount] input").setValue("10000");
-        $("[data-test-id=from] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("[data-test-id=from] input").setValue("5559000000000001");
-        $("[data-test-id=action-transfer]").click();
-        $("[data-test-id=dashboard]").shouldBe(visible);
-        $x("//*[@id=\"root\"]/div/ul/li[2]").shouldHave(text("10000"));
+        $("[data-test-id=error-notification]").shouldBe(visible);
     }
 }
