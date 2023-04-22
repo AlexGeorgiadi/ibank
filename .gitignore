@@ -1,4 +1,6 @@
 Thumbs.db*
+src/test/.DS_Store
+src/test/java/ru/netology/ibank/.DS_Store
 .DS_Store
 HELP.md
 .gradle
