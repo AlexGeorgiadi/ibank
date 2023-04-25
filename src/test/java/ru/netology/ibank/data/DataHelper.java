@@ -1,4 +1,4 @@
-package ru.netology.ibank.Data;
+package ru.netology.ibank.data;
 
 import lombok.Value;
 
@@ -18,7 +18,15 @@ public class DataHelper {
         private String code;
     }
 
-    public static VerificationCode getVerificationCodeFor (AuthInfo authInfo) {
+    public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
         return new VerificationCode("12345");
+    }
+
+    public static String getCardNumber1() {
+        return new String("5559 0000 0000 0001");
+    }
+
+    public static String getCardNumber2() {
+        return new String("5559 0000 0000 0002");
     }
 }

@@ -1,7 +1,7 @@
-package ru.netology.ibank.Page;
+package ru.netology.ibank.page;
 
 import com.codeborne.selenide.SelenideElement;
-import ru.netology.ibank.Data.DataHelper;
+import ru.netology.ibank.data.DataHelper;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
